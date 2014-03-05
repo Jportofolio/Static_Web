@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+#service{ width:900px;
+          height:auto;
+	
+	}
+	 table#ser-content{ border-collapse:collapse;}
+ table#ser-content .ser-tit{width:auto; padding-left:10px;
+					 font-family: Tahoma;
+					 font-size:18px; margin:6px;
+					 color: #69C;}
+ table#ser-content td.clearance{
+	    font-family:Arial; text-align:justify; 
+                                   font-size:15px;
+								   margin-left: 9px;
+								   padding-left:10px;
+								   padding-right:10px;
+								   width:600px; vertical-align:middle;
+								   margin-right:10px;
+	 
+	 }
+ table#ser-content td.clearance ul{ margin-left:15px; padding:1;}
+ table#ser-content td.ser-img{
+	 vertical-align:top;
+	 }
+ table#ser-content tr{ }
+ table#ser-content td{ height:auto; vertical-align:top;
+                       }
+ table#ser-content td.freight{
+	 
+	  font-family:Arial; text-align:justify; 
+                                   font-size:15px;
+								   margin-left: 9px;
+								   padding-left:10px;
+								   padding-right:10px;
+								   width:600px;
+								   vertical-align:top;
+								   margin-right:10px;
+	 }
+ table#ser-content td.import{
+	 font-family:Arial; text-align:justify; 
+                                   font-size:15px;
+								   margin-left: 9px;
+								   padding-left:10px;
+								   padding-right:10px;
+								   width:600px;
+								   vertical-align:top;
+								   margin-right:10px;
+	 
+	 }
+ table#ser-content td.mailorder{
+	 font-family:Arial; text-align:justify; 
+                                   font-size:15px;
+								   margin-left: 9px;
+								   padding-left:10px;
+								   padding-right:10px;
+								   width:600px;
+								   vertical-align:top;
+								   margin-right:10px;
+	 
+	 }

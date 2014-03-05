@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Us here &gt;&gt;</title>
+<link rel="stylesheet" href="mycss/layoutstyle.css" />
+<script type="text/javascript" src="thescript/jquery-1.5.2.js"></script>
+<script type="text/javascript" src="thescript/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="thescript/jquery-test.js"></script>
+<script type="text/javascript" src="thescript/jquery-ui-1.8.24.custom.min.js"></script>
+<link rel="shortcut icon" href="img/log.png" />
+<link href="mycss/start/jquery-ui-1.10.2.custom.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script>
+  $(document).ready(function() {
+    $(".send").button()
+	          .click(function (){
+							   
+		$.ajax({type:'POST', url: 'send.php', data:$('#cont').serialize(), 
+		success: function(response) {
+         alert(response);
+       }});
+
+							  
+		});
+	/******definition of RESET******/		  
+	$(".reset").button()
+	           .click(function (){
+				$('form#cont').find("input[type=text], textarea").val("");			
+								
+								});		  
+  });
+  </script>
+
+<!---This is the Facebook plugin-->
+<div id="fb-root"></div>
+
+<!--This is  the Header Goes Here-->
+<div id="head">
+ <div class="header">
+   <div class="log">
+      <table width="900" id="titre" border="0">
+  <tr>
+    <td width="234">
+       <img src="img/log.png" width="101" height="92" border="0" usemap="#logoMap" id="logo" />
+    <img src="img/title.png" width="391" height="81" />
+    </td>
+    <td id="pays" width="309">
+     <div class="menu-top">
+    <ul>
+      <li><a href="contact.html">Contacts</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="Branches.html">Branches</a></li>
+    </ul>
+   </div>
+     <img src="img/DRC-RSA.gif" width="215" height="29" />
+     </td>
+  </tr>
+</table>
+
+    </div>
+   <div class="menu">
+    <ul>
+      <li><a href="contact.html" >Contacts</a></li>
+      <li><a href="ref.html">References</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="Branches.html">Branches</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="index.html" id="home">Home</a></li>
+    </ul>
+   </div>
+ </div>
+</div>
+<!--This is  the Wrapper Goes Here-->
+<div id="wrapper">
+<div class="content">
+   <div id="slider">
+   <!---This is the First SLIDE-Picture Display-->
+   <img src="img/contact.jpg" width="900" height="250" />
+    </div>
+   <div id="text-content">
+    <table id="contact" width="898" border="0">
+  <tr>
+    <td class="f" width="541">
+    <p class="formtit">Please Fill out the form to Contact Us <a href="Branches.html">BRANCHES</a></p>
+    <form action="send.php" id="cont" method="post" 
+    enctype="application/x-www-form-urlencoded" name="cont">
+    <dl>
+     <dt>Names</dt>
+     <dd><input name="names" id="names" type="text" size="20" maxlength="20" /></dd>
+     <dt>E_mails</dt>
+     <dd><input name="email" id="email" type="text" size="20" maxlength="20" /></dd>
+     <dt>Subject</dt>
+     <dd><input name="subject" id="subject" type="text" size="20" maxlength="20" /></dd>
+     <dt>Messages</dt>
+     <dd><textarea name="message" id="message" cols="33" rows="9"></textarea><input name="envoi" type="hidden" value="4" /></dd>
+     <dd></dd>
+    </dl>
+    </form><p class="but"><button class="send">Send Message</button>
+     <button class="reset">Clear Form</button></p>
+    </td>
+    <td class="carte" width="341">
+    <div class="dcontact"> 
+    <h3> CAPE TOWN HEAD OFFICE ADDRESS</h3>
+     <ul>
+        <li>Address : 105 TULBAGH</li>
+        <li>16 HANS STRIJDOM AV.</li>
+        <li>CAPE TOWN</li>
+        <li>Ref: ABSA Building</li>
+        <li>Tel : (+27) 071 65 67 837</li>
+        <li>Cell :(+27) 083 20 76 767</li>
+        <li>Cell :(+27) 078 65 38 401</li>
+        <li>Mail : atlanticleaderlink@gmail.com</li>
+     </ul>
+    </div>
+    <div class="cartecontact">
+    
+    </div>
+    </td>
+  </tr>
+  </table>
+   </div>
+ </div> 
+</div>
+<!--This is  the Footer Goes Here-->
+<div id="foot">
+ <div class="foot-details">
+    <div class="footer-menu">
+      <ul> 
+        <li>Home</li>
+        <li>Services</li>  
+        <li>Branches</li>
+        <li>Profile</li>
+        <li>References</li>
+        <li>contacts</li>
+      </ul>
+    </div>
+    <div class="footer-sub1">
+      <ul> 
+        <li></li>
+        <li><a href="services.html#CARS CLEARANCE">Vehicle Clearing</a></li>  
+        <li><a href="Branches.html">Cape Town</a></li>
+        <li><a href="profile.html">Company</a></li>
+        <li></li>
+        <li><a href="contact.html">Physical Address</a></li>
+      </ul>
+    </div>
+     <div class="footer-sub2">
+      <ul> 
+        <li></li>
+        <li><a href="services.html#AIR FREIGHT & MARITIME FREIGHT">Forwarding</a></li>  
+        <li><a href="Branches.html">Johannesburg</a></li>
+        <li><a href="profile.html">Management</a></li>
+        <li></li>
+        <li><a href="#">E-mail us</a></li>
+      </ul>
+    </div>
+    <div class="footer-sub3">
+      <ul> 
+        <li></li>
+        <li><a href="services.html#MAIL ORDER">Mail Order</a></li>  
+        <li><a href="Branches.html">Kinshasa</a></li>
+        <li>------------------</li>
+        <li></li>
+        <li><a href="#" class="face">Facebook <img src="img/facevbook.png" width="17" height="20" /></a> </li>
+      </ul>
+    </div>
+    <div class="footer-sub4">
+      <ul> 
+        <li></li>
+        <li><a href="Services.html#IMPORT/EXPORT">Import Export</a></li>  
+        <li><a href="Branches.html">Lubumbashi</a></li>
+        <li><a href="#"></a></li>
+        <li></li>
+        <li><a href="#" class="twitt">Twitter<img src="img/twitter.png" width="30" height="17" /></a>
+         </li>
+      </ul>
+    </div><br>
+  <table width="900" border="0" id="bottom-tab">
+  <tr>
+    <td><address>Atlantic Leader Link &copy; All rights Reserved</address> 
+    <i>Designed By Josue Kula Cell : (+27) 73 69 46 142</i>
+    </td>
+   
+  </tr>
+</table>
+
+ </div>
+</div>
+
+<map name="logoMap" id="logoMap">
+  <area shape="circle" coords="51,45,49" href="index.html" />
+</map>
+</body>
+</html>
